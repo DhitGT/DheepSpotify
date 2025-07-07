@@ -37,12 +37,12 @@
       <!-- Now Playing Section -->
       <div v-if="nowPlaying?.isPlaying" class="text-center max-w-sm mx-auto">
         <!-- Album Art with Glassmorphism -->
-        <div class="relative mb-8 group">
-          <div class="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
-          <div class="relative backdrop-blur-xl bg-white/10 p-6 rounded-3xl border border-white/20 shadow-2xl">
+        <div class="relative mx-auto mb-8  flex items-center justify-center group">
+          <div class="absolute max-h-64 max-w-64 inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
+          <div class="relative max-h-64 max-w-64 backdrop-blur-xl bg-white/10 p-6 rounded-3xl border border-white/20 shadow-2xl">
             <img
               :src="nowPlaying.image"
-              class="w-64 h-64 object-cover rounded-2xl shadow-2xl mx-auto transform group-hover:scale-105 transition-transform duration-500"
+              class="max-w-50 max-h-50 aspect-square object-cover rounded-2xl shadow-2xl mx-auto transform group-hover:scale-105 transition-transform duration-500"
               crossorigin="anonymous"
               @load="extractColor"
             />
@@ -127,7 +127,7 @@
             </svg>
           </div>
           <p class="text-xl font-medium" :class="textColorClass">No music playing</p>
-          <p class="text-sm opacity-70 mt-2" :class="textColorClass">Start playing something on Spotify</p>
+          <p class="text-sm opacity-70 mt-2" :class="textColorClass">@adtydstn</p>
         </div>
       </div>
     </div>
